@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Kian's Portfolio</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+body { font-family: 'Roboto', sans-serif; scroll-behavior: smooth; }
+.btn-scale { transition: transform 0.15s ease-in-out; }
+.btn-scale:active { transform: scale(0.95); }
+.hover-shadow:hover { box-shadow: 0 0.7rem 1.2rem rgba(0,0,0,0.35) !important; transition: 0.3s; }
+.hover-scale:hover { transform: scale(1.2); transition: 0.3s; }
+.text-shadow { text-shadow: 1px 1px 4px rgba(0,0,0,0.3); }
+</style>
+</head>
+<body class="bg-light" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" tabindex="0">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary">MyPortfolio</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-primary fw-semibold" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link text-primary fw-semibold" href="#tools">Tools</a></li>
+        <li class="nav-item"><a class="nav-link text-primary fw-semibold" href="#portfolio">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-primary fw-semibold" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="position-relative d-flex align-items-center vh-100 bg-primary bg-gradient text-white">
+  <div class="position-absolute rounded-circle bg-white opacity-25" style="width:500px; height:500px; top:-150px; right:-150px;"></div>
+  <div class="container text-center text-lg-start position-relative">
+    <div class="row align-items-center">
+      <div class="col-lg-6">
+        <h1 class="display-3 fw-bold mb-4 text-shadow">Hi, I'm Kian</h1>
+        <p class="lead mb-4 text-light-emphasis">Welcome to my portfolio! Here’s a collection of projects, ideas, and experiments I’m excited to share in a fun and simple way.</p>
+        <a class="btn btn-light btn-lg me-2 shadow-sm" href="#portfolio">View Projects</a>
+      </div>
+      <div class="col-lg-6 mt-4 mt-lg-0 d-flex justify-content-center justify-content-lg-end">
+        <img src="kian.jpg" class="rounded-circle border border-white border-3 img-fluid shadow-lg" style="max-width:500px;">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Separator HERO → ABOUT -->
+<div class="bg-white rounded-top-5 overflow-hidden" style="height:50px;"></div>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 bg-gradient bg-light-primary">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img src="comp.jpg" class="img-fluid rounded-4 shadow-lg border border-primary border-2" alt="About Me Image">
+      </div>
+      <div class="col-lg-6">
+        <h2 class="fw-bold mb-4 text-primary">About Me</h2>
+        <p class="mb-4 fs-5 text-secondary">
+          Hi! I’m a third year college student currently taking up Computer Engineering. I may not have a lot of knowledge in technology yet, but I’m very eager and willing to learn more every day. I enjoy exploring new things, improving my skills little by little, and gaining experience along the way. I’m a friendly and positive person who believes that with curiosity and effort, there’s always room to grow and get better.
+        </p>
+        <h6>Friendly</h6>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-primary" style="width:100%"></div>
+        </div>
+        <h6>Generous</h6>
+        <div class="progress mb-3">
+          <div class="progress-bar bg-success" style="width:100%"></div>
+        </div>
+        <h6>Reliable</h6>
+        <div class="progress mb-4">
+          <div class="progress-bar bg-warning" style="width:100%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Separator ABOUT → TOOLS -->
+<div class="bg-primary bg-gradient rounded-bottom-5 overflow-hidden" style="height:50px;"></div>
+
+<!-- TOOLS -->
+<section id="tools" class="py-5 bg-gradient bg-light-info">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Technologies I Already Used</h2>
+    </div>
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <i class="bi bi-bootstrap fs-1 text-primary mb-2"></i>
+        <h6 class="fw-semibold">Bootstrap</h6>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-code-slash fs-1 text-success mb-2"></i>
+        <h6 class="fw-semibold">HTML & CSS</h6>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-filetype-js fs-1 text-warning mb-2"></i>
+        <h6 class="fw-semibold">JavaScript</h6>
+      </div>
+      <div class="col-md-3">
+        <i class="bi bi-github fs-1 text-dark mb-2"></i>
+        <h6 class="fw-semibold">GitHub</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Separator TOOLS → PORTFOLIO -->
+<div class="bg-light bg-gradient rounded-top-5 overflow-hidden" style="height:50px;"></div>
+
+<!-- PORTFOLIO -->
+<section id="portfolio" class="py-5 bg-gradient bg-light-secondary">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Featured Projects</h2>
+      <p class="fs-5 text-secondary">
+        I honestly haven’t created any projects related to tech yet, but I really enjoy sharing the small projects and improvements I do on my motorcycle and car. I’m always happy to show what I’m working on, even if they’re simple things. I’m still learning and exploring new ideas, and hopefully in the future I’ll be able to work on some tech-related projects too. For now, I just enjoy building, fixing, and sharing the things I’m passionate about.
+      </p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card overflow-hidden shadow-lg bg-primary bg-opacity-10 hover-shadow">
+          <img src="nmax2.jpeg" class="card-img-top rounded-3" alt="Project 1">
+          <div class="card-body text-center">
+            <h5 class="card-title text-primary">Nmax V1</h5>
+            <button class="btn btn-primary btn-sm btn-scale shadow-sm" data-bs-toggle="modal" data-bs-target="#project1Modal">View Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card overflow-hidden shadow-lg bg-success bg-opacity-10 hover-shadow">
+          <img src="oto.jpg" class="card-img-top rounded-3" alt="Project 2">
+          <div class="card-body text-center">
+            <h5 class="card-title text-success">2017 Toyota Vios</h5>
+            <button class="btn btn-success btn-sm btn-scale shadow-sm" data-bs-toggle="modal" data-bs-target="#project2Modal">View Project</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card overflow-hidden shadow-lg bg-warning bg-opacity-10 hover-shadow">
+          <img src="nmax.jpg" class="card-img-top rounded-3" alt="Project 3">
+          <div class="card-body text-center">
+            <h5 class="card-title text-warning">Nmax V2</h5>
+            <button class="btn btn-warning btn-sm btn-scale shadow-sm" data-bs-toggle="modal" data-bs-target="#project3Modal">View Project</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Wave Separator PORTFOLIO → CONTACT -->
+<div class="bg-primary bg-gradient rounded-bottom-5 overflow-hidden" style="height:50px;"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-gradient bg-light-info">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Let's Work Together</h2>
+      <p class="text-secondary">Connect with me via social media or send a message.</p>
+    </div>
+    <div class="text-center mb-5">
+      <a href="#" class="fs-3 text-primary me-3 hover-scale"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="fs-3 text-danger hover-scale"><i class="bi bi-instagram"></i></a>
+    </div>
+    <div class="row g-4 d-flex align-items-stretch">
+      <div class="col-lg-6 d-flex flex-column">
+        <div class="ratio ratio-4x3 h-100 shadow-lg rounded">
+          <iframe src="https://www.google.com/maps/embed?..." style="border:0; width:100%; height:100%;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <div class="col-lg-6 d-flex flex-column">
+        <form class="flex-grow-1 d-flex flex-column justify-content-between shadow-lg rounded p-4 bg-light">
+          <input type="text" class="form-control mb-3 border-primary" placeholder="Name">
+          <input type="email" class="form-control mb-3 border-primary" placeholder="Email">
+          <input type="text" class="form-control mb-3 border-primary" placeholder="Subject">
+          <textarea class="form-control mb-3 border-primary h-100" rows="5" placeholder="Message"></textarea>
+          <button type="submit" class="btn btn-primary w-100 mt-auto shadow-sm">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-4 bg-primary bg-gradient text-white">
+  <p class="mb-0">© 2026 Kian's Portfolio</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
