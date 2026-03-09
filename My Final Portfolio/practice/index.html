@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Apply fonts using Bootstrap utilities -->
+    <style>
+        body { font-family: 'Roboto', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Montserrat', sans-serif; }
+    </style>
+</head>
+<body class="bg-light text-dark">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">MyPortfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tools">Tools</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Landing Page -->
+    <header id="home" class="d-flex align-items-center justify-content-center text-center text-white" style="height:100vh; background: url('your-photo.jpg') center/cover no-repeat;">
+        <div class="bg-dark bg-opacity-50 p-4 rounded">
+            <h1 class="display-4 fw-bold">Hi, I'm [Your Name]</h1>
+            <p class="lead">Aspiring Software Developer | Tech Enthusiast</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">About Me</h2>
+            <p class="text-center fs-5 mx-auto" style="max-width: 800px;">
+                I am a passionate developer aspiring to create innovative software solutions that make a difference. My dream career involves building scalable web applications and contributing to exciting tech projects around the world.
+            </p>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Tools & Technologies</h2>
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3">
+                    <img src="icons/html5.png" alt="HTML5" class="img-fluid mb-2" width="60">
+                    <h5>HTML5</h5>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="icons/css3.png" alt="CSS3" class="img-fluid mb-2" width="60">
+                    <h5>CSS3</h5>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="icons/bootstrap.png" alt="Bootstrap" class="img-fluid mb-2" width="60">
+                    <h5>Bootstrap</h5>
+                </div>
+                <div class="col-6 col-md-3">
+                    <img src="icons/javascript.png" alt="JavaScript" class="img-fluid mb-2" width="60">
+                    <h5>JavaScript</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Projects</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="projects/project1.jpg" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Portfolio Website</h5>
+                            <p class="card-text">A responsive personal portfolio website built using HTML, CSS, and Bootstrap.</p>
+                            <a href="https://github.com/yourusername/project1" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="projects/project2.jpg" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Todo App</h5>
+                            <p class="card-text">A simple todo app with CRUD functionality using JavaScript and local storage.</p>
+                            <a href="https://github.com/yourusername/project2" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <img src="projects/project3.jpg" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather App</h5>
+                            <p class="card-text">A weather forecast web app that uses an external API to fetch real-time data.</p>
+                            <a href="https://github.com/yourusername/project3" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4 fw-bold">Contact Me</h2>
+            <div class="text-center">
+                <a href="https://www.facebook.com/yourprofile" target="_blank" class="btn btn-primary mx-2">Facebook</a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="btn btn-info mx-2 text-white">LinkedIn</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-primary text-white">
+        &copy; 2026 [Your Name]. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

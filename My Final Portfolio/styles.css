@@ -1,0 +1,62 @@
+/* General Body and Scroll */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero Image */
+  .hero-img {
+    max-width: 500px;
+  }
+  
+  /* Background Circle */
+  .circle-bg {
+    width: 500px;
+    height: 500px;
+    top: -150px;
+    right: -150px;
+  }
+  
+  /* Full Width for Progress Bars */
+  .full-width {
+    width: 100%;
+  }
+  
+  /* Button Scale on Click */
+  .btn-scale {
+    transition: transform 0.15s ease-in-out;
+  }
+  
+  .btn-scale:active {
+    transform: scale(0.95);
+  }
+  
+  /* Project Cards Hover Animation */
+  .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Button Hover Animation */
+  .btn:hover {
+    transform: scale(1.05);
+    transition: 0.2s;
+  }
+
+  .modal-content {
+    transform: scale(0.95);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+  
+  .modal.show .modal-content {
+    transform: scale(1);
+    opacity: 1;
+  }
