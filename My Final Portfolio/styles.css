@@ -9,18 +9,46 @@ body {
   
   /* Hero Image */
   .hero-img {
-    max-width: 500px;
-  }
-  
-  /* Background Circle */
+  max-width: 100%;
+  width: clamp(240px, 50vw, 500px);
+  height: auto;
+}
+
+/* Background Circle */
+.circle-bg {
+  width: clamp(220px, 40vw, 500px);
+  height: clamp(220px, 40vw, 500px);
+  top: -120px;
+  right: -120px;
+}
+
+@media (max-width: 991.98px) {
   .circle-bg {
-    width: 500px;
-    height: 500px;
-    top: -150px;
-    right: -150px;
+    top: -90px;
+    right: -90px;
   }
-  
-  /* Full Width for Progress Bars */
+  section.position-relative.vh-100 {
+    min-height: 70vh;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .circle-bg {
+    top: -70px;
+    right: -70px;
+  }
+  .hero-img {
+    width: 280px;
+  }
+  .navbar-nav .nav-link {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
+
+/* Full Width for Progress Bars */
   .full-width {
     width: 100%;
   }
